@@ -1,0 +1,146 @@
+.almacen_cont_banner {
+  height: 100vh;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+
+}
+ 
+ .almacen_sombra {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -ms-transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  padding: 20px;
+  width: 80%;
+  text-align: center;
+  background-image: linear-gradient(-45deg,#B6D5DA, #DFE4E6, #E5CEB2, #A9AAA8);  opacity: .7;
+  border-radius: 120px;
+  color: #000;
+  font-family: 'Qwitcher Grypen', cursive;  }
+
+.almacen_sombra hr {
+  border-top: 1px solid #000;
+}
+
+.almacen_sombra h1 {
+  font-size: 8vw;
+  font-weight: bold;
+  top: 50%;
+  width: 24em;
+  margin: 0 auto;
+  border-right: 2px solid rgba(255, 255, 255, .75);
+  text-align: center;
+  white-space: nowrap;
+  overflow: hidden;
+  animation: typewriter 2s steps(44) 1s 1 normal both,
+    blinkTextCursor 500ms steps(44) infinite normal;
+}
+
+.almacen_sombra h2 {
+  font-size: 4vw;
+  font-weight: bold;
+  margin-bottom: 10px;
+  animation: keyframes_aparece 2s ease-in-out;
+  animation-delay: 2s;
+  animation-fill-mode: both;
+}
+
+.menu {
+  display: block;
+  position: relative;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.menu li {
+  font-family: "Helvetica Neue", Helvetica, sans-serif;
+  font-size: 1vw;
+  position: relative;
+  display: inline-block;
+  text-decoration: none;
+  padding: 1px;
+  margin-bottom: 0;
+  /* border: #000 1px solid; */
+  width: 150px;
+}
+
+
+.menu.catalogo {
+  border-top: #00f2fa .4em solid;
+
+  animation: almacen_keyframes_aparece_de_arriba 1s;
+  -webkit-animation: almacen_keyframes_aparece_de_arriba 1s;
+  animation-fill-mode: both;
+  animation-delay: 2s;
+}
+
+
+.menu.nosotros {
+  border-top: #ff6961 .4em solid;
+  opacity: 0;
+  animation: almacen_keyframes_aparece_de_arriba 1s;
+  -webkit-animation: almacen_keyframes_aparece_de_arriba 1s;
+  animation-fill-mode: forwards;
+  animation-delay: 2.5s;
+}
+
+.menu.contacto {
+  border-top: #82E0AA .4em solid;
+  opacity: 0;
+  animation: almacen_keyframes_aparece_de_arriba 1s;
+  -webkit-animation: almacen_keyframes_aparece_de_arriba 1s;
+  animation-fill-mode: forwards;
+  animation-delay: 3s;
+}
+
+.menu>span {
+  display: block;
+  position: absolute;
+  overflow: hidden;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 0%;
+  transition: 0.5s ease-in-out;
+  -webkit-transition: 0.5s ease-in-out;
+
+}
+
+.menu:after,
+.menu>span>span {
+  display: block;
+  text-align: center;
+  border-radius: 0em;
+
+}
+
+.menu:after {
+  content: attr(data-title);
+  width: 100%;
+  color: rgb(3, 3, 3);
+}
+
+.menu>span>span {
+  color: rgb(2, 2, 2);
+}
+
+.menu.catalogo>span>span {
+  background: #00f2fa;
+}
+
+.menu.nosotros>span>span {
+  background: #ff6961;
+}
+
+.menu.contacto>span>span {
+  background: #82E0AA;
+}
+
+.menu:hover>span {
+  height: 100%;
+}

@@ -1,0 +1,151 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Qwitcher Grypen', cursive,"Helvetica Neue", Helvetica, sans-serif;
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100px;
+  padding: 10px 100px;
+  box-sizing: border-box;
+  z-index: 1;
+  transition: .5s;
+}
+
+nav.black {
+  background-image: linear-gradient(-45deg,#B6D5DA, #DFE4E6, #E5CEB2, #A9AAA8);
+  height: 80px;
+  padding: 10px 50px;
+  z-index: 1;
+
+}
+
+nav.black .logo{
+  height: 60px;
+}
+nav.black .logo img {
+  height: 60px;
+  float: left;
+}
+
+nav.black ul li a {
+  color: #262626;
+  line-height: 60px;
+}
+
+nav.black .marca a{
+  color: rgb(0, 0, 0);
+  line-height: 60px;   
+}
+
+nav .logo {
+  float: left;
+}
+
+
+nav .logo img {
+  height: 80px;
+  transition: .5s;
+}
+
+nav .marca {
+  height: 100%;
+  transition: .5s;
+  float: left;
+  font-family: 'Qwitcher Grypen', cursive,"Helvetica Neue", Helvetica, sans-serif;
+  font-size: 3vw;
+  list-style: none;
+  width: fit-content;
+  margin-left: 10px;
+}
+
+nav .marca a {
+  font-size: auto;
+ line-height: 80px;
+  color: #fff;
+  text-decoration: none;
+  transition: .5s;
+}
+
+nav ul {
+  float: right;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+nav ul li {
+  list-style: none;
+}
+
+nav ul li a {
+  line-height: 80px;
+  color: #fff;
+  padding: 1px 20px;
+  margin-bottom: 1px;
+  text-decoration: none;
+  /* text-transform: uppercase; */
+  transition: .5s;
+  font-size: 2vw;
+}
+
+nav ul li a.active,
+nav ul li a:hover {
+  border: 2px solid #000;  
+  /* background: url(/img/nube.png); */
+  color: rgb(0, 0, 0);
+  background: #B9E7F5;
+  text-decoration: none;
+  border-radius: 30px;
+
+}
+
+section.sec1{
+  height: 100vh;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),url(../img/fondo2.jpg);
+}
+
+section.cont1{
+  margin: 2.5vh;
+  padding: 5vh;
+  font-size: 2vw;
+}
+
+section.cont1 h1{
+  padding-left: 70px;
+  font-size: 4vw;
+  font-family: 'Qwitcher Grypen', cursive,"Helvetica Neue", Helvetica, sans-serif;
+  text-align: center;
+}
+
+section.cont1 p{
+  font-family: 'Qwitcher Grypen', cursive,"Helvetica Neue", Helvetica, sans-serif;
+  text-align: center;
+  line-height: 30px;
+}
+
+.info_amigurumis.col-md-6 p{
+  font-size: 2vw;
+  font-family: 'Qwitcher Grypen', cursive,"Helvetica Neue", Helvetica, sans-serif;
+  text-align: justify;
+  line-height: 30px;
+  padding-left: 70px;
+}
+
+.img_amigurumis{
+  width: 75%;
+  display: flex;
+  position: right;
+
+}
+
+

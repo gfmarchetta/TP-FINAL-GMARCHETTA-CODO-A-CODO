@@ -1,0 +1,62 @@
+body {
+  background: rgb(109, 109, 109);
+}
+
+#cloud {
+  /* width: 350px; height: 120px; */
+  width: 700px; height: 240px;
+  background: #BFF;
+  background: linear-gradient(top, #BFF 5%, #DFF 100%);
+  background: -webkit-linear-gradient(top, #EC767F 5%,#99998E, #A0E0D0,#F3DCE4 100%);
+  background: -moz-linear-gradient(top, #BFF 5%, #DFF 100%);
+  background: -ms-linear-gradient(top, #BFF 5%, #DFF 100%);
+  background: -o-linear-gradient(top, #BFF 5%, #DFF 100%);
+  top: 150px;
+  border-radius: 200px;
+  position: absolute;
+  margin: 120px auto 20px;
+  left:250px;
+}
+
+#cloud:after, #cloud:before {
+  content: '';
+  position: absolute;
+  background: #EC767F;
+  z-index: -1
+}
+
+#cloud:after {
+  /* width: 100px; height: 100px; */
+  width: 200px; height: 200px;
+  top: -90px; left: 90px;
+  border-radius: 100px;
+}
+
+#cloud:before {
+  width: 350px; height: 350px;
+  top: -150px; right: 100px;
+  border-radius: 200px;
+}
+
+.shadow {
+  width: 350px;
+  position: absolute; bottom: -10px; 
+  background: #000;
+  z-index: -1;
+  box-shadow: 0 0 25px 8px rgba(0, 0, 0, 0.4);
+  border-radius: 50%;
+}
+
+.nube_sin_fondo{
+  background: -webkit-linear-gradient(top, #EC767F 5%,#99998E, #A0E0D0,#F3DCE4 100%);
+  width: 350px;
+  height: 350px;
+  border: #000 solid 1px;
+  opacity: .5;
+}
+
+.nube_sin_fondo:after{
+  background: src = "/img/nube_sin_fondo.png";
+  background-size: cover;
+
+}
